@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>快速记录 · 案头</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="quick-body">
+
+<main class="quick">
+  <header class="quick-head" data-tiny-drag>
+    <div>
+      <p class="quick-kicker">案头 · 快速记录</p>
+      <p class="quick-hint">⌘⇧Space 随时打开 · Esc 关闭</p>
+    </div>
+    <button class="btn ghost icon-btn" type="button" data-quick-close aria-label="关闭">×</button>
+  </header>
+
+  <form class="quick-form" data-quick-form>
+    <textarea class="quick-input" data-quick-text rows="3" maxlength="4000"
+              placeholder="记下刚才发生的事…" autocomplete="off" autofocus></textarea>
+    <div class="quick-row">
+      <select class="field" data-quick-kind aria-label="记录类型"></select>
+      <select class="field" data-quick-project aria-label="项目"></select>
+      <span class="quick-status" data-quick-status></span>
+      <button class="btn primary" type="submit">记下</button>
+    </div>
+  </form>
+</main>
+
+<script src="js/util.js"></script>
+<script src="quick.js"></script>
+</body>
+</html>

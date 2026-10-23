@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>案头 · 个人工作台</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<aside class="rail">
+  <div class="brand">
+    <p class="brand-name">案头</p>
+    <p class="brand-sub">个人工作台</p>
+  </div>
+
+  <nav class="nav" aria-label="主导航">
+    <a href="#/today" data-nav="today">今日<span class="nav-key">⌘1</span></a>
+    <a href="#/journal" data-nav="journal">记录<span class="nav-key">⌘2</span></a>
+    <a href="#/tasks" data-nav="tasks">任务<span class="nav-key">⌘3</span></a>
+    <a href="#/projects" data-nav="projects">项目<span class="nav-key">⌘4</span></a>
+    <a href="#/review" data-nav="review">回顾<span class="nav-key">⌘5</span></a>
+    <a href="#/performance" data-nav="performance">绩效<span class="nav-key">⌘6</span></a>
+    <a href="#/snippets" data-nav="snippets">片段<span class="nav-key">⌘7</span></a>
+  </nav>
+
+  <div class="rail-foot">
+    <div class="rail-counts" data-rail-counts>正在读取…</div>
+    <div class="rail-status" data-saved>数据保存在本机</div>
+    <a class="rail-settings" href="#/settings" data-nav="settings">设置<span class="nav-key">⌘,</span></a>
+  </div>
+</aside>
+
+<main class="main" id="view" aria-live="polite">
+  <div class="page"><p class="muted">正在打开工作台…</p></div>
+</main>
+
+<div id="toasts" class="toasts" aria-live="polite" aria-atomic="true"></div>
+
+<script src="js/util.js"></script>
+<script src="js/api.js"></script>
+<script src="js/store.js"></script>
+<script src="js/components.js"></script>
+<script src="js/ai.js"></script>
+<script src="js/views/today.js"></script>
+<script src="js/views/journal.js"></script>
+<script src="js/views/tasks.js"></script>
+<script src="js/views/projects.js"></script>
+<script src="js/views/review.js"></script>
+<script src="js/views/performance.js"></script>
+<script src="js/views/snippets.js"></script>
+<script src="js/views/settings.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
